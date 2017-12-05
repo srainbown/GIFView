@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ImageIO/ImageIO.h>
 
 @interface GIFView : UIView
+
+-(id)initWithFrame:(CGRect)frame filePath:(NSString *)filePath andInterval:(float)time;
+-(id)initWithFrame:(CGRect)frame data:(NSData *)data andInterval:(float)time;
 
 @end

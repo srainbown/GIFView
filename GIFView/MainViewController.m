@@ -6,9 +6,16 @@
 //  Copyright © 2017年 dangbei. All rights reserved.
 //
 
+#define KWidth self.view.bounds.size.width
+#define KHeight self.view.bounds.size.height
+
 #import "MainViewController.h"
+#import "GIFView.h"
 
 @interface MainViewController ()
+
+@property (nonatomic, strong) GIFView *gifView_one;
+@property (nonatomic, strong) GIFView *gifView_two;
 
 @end
 
@@ -17,6 +24,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSString *filePath_one = [[NSBundle mainBundle] pathForResource:@"IMG_1035" ofType:@"gif"];
+    _gifView_one = [[GIFView alloc]initWithFrame:CGRectMake(0, 64, KWidth, 200) filePath:filePath_one andInterval:0.05];
+    [self.view addSubview:_gifView_one];
+    
+    NSString *filePath_two = [[NSBundle mainBundle] pathForResource:@"IMG_1036" ofType:@"gif"];
+    _gifView_two = [[GIFView alloc]initWithFrame:CGRectMake(0, 300, KWidth, 200) filePath:filePath_two andInterval:0.2];
+    [self.view addSubview:_gifView_two];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +42,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
