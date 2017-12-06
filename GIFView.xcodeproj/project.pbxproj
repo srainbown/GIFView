@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0FC51D1FD79C9400913E1E /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0FC51C1FD79C9400913E1E /* DiscoverViewController.m */; };
 		3E29DC871FD68C98007810FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29DC861FD68C98007810FD /* AppDelegate.m */; };
 		3E29DC8F1FD68C98007810FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E29DC8E1FD68C98007810FD /* Assets.xcassets */; };
 		3E29DC921FD68C98007810FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E29DC901FD68C98007810FD /* LaunchScreen.storyboard */; };
@@ -17,6 +18,7 @@
 		3E29DCBF1FD68F2A007810FD /* GIFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29DCBE1FD68F2A007810FD /* GIFView.m */; };
 		3E29DCC21FD68FBE007810FD /* IMG_1036.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3E29DCC01FD68FBD007810FD /* IMG_1036.gif */; };
 		3E29DCC31FD68FBE007810FD /* IMG_1035.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3E29DCC11FD68FBE007810FD /* IMG_1035.gif */; };
+		BC6B595AF78CD9FFFD2B9547 /* libPods-GIFView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D6946018B6DD68F29112F1 /* libPods-GIFView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E0FC5191FD798D700913E1E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3E0FC51B1FD79C9400913E1E /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		3E0FC51C1FD79C9400913E1E /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		3E29DC821FD68C98007810FD /* GIFView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E29DC851FD68C98007810FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E29DC861FD68C98007810FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 		3E29DCBE1FD68F2A007810FD /* GIFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFView.m; sourceTree = "<group>"; };
 		3E29DCC01FD68FBD007810FD /* IMG_1036.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_1036.gif; sourceTree = "<group>"; };
 		3E29DCC11FD68FBE007810FD /* IMG_1035.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_1035.gif; sourceTree = "<group>"; };
+		73D6946018B6DD68F29112F1 /* libPods-GIFView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GIFView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB61E8A496406CE19B3AD0A9 /* Pods-GIFView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GIFView/Pods-GIFView.debug.xcconfig"; sourceTree = "<group>"; };
+		EBC1FA119D454A63CEC9FD4A /* Pods-GIFView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFView.release.xcconfig"; path = "Pods/Target Support Files/Pods-GIFView/Pods-GIFView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6B595AF78CD9FFFD2B9547 /* libPods-GIFView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DECCFC9B5939D8B48221906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB61E8A496406CE19B3AD0A9 /* Pods-GIFView.debug.xcconfig */,
+				EBC1FA119D454A63CEC9FD4A /* Pods-GIFView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3E29DC791FD68C98007810FD = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +108,8 @@
 				3E29DC9D1FD68C98007810FD /* GIFViewTests */,
 				3E29DCA81FD68C98007810FD /* GIFViewUITests */,
 				3E29DC831FD68C98007810FD /* Products */,
+				3DECCFC9B5939D8B48221906 /* Pods */,
+				ED4565CCE7227B257AB2AB61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,8 +128,11 @@
 			children = (
 				3E29DC851FD68C98007810FD /* AppDelegate.h */,
 				3E29DC861FD68C98007810FD /* AppDelegate.m */,
+				3E0FC5191FD798D700913E1E /* PrefixHeader.pch */,
 				3E29DCB71FD68CC7007810FD /* MainViewController.h */,
 				3E29DCB81FD68CC7007810FD /* MainViewController.m */,
+				3E0FC51B1FD79C9400913E1E /* DiscoverViewController.h */,
+				3E0FC51C1FD79C9400913E1E /* DiscoverViewController.m */,
 				3E29DCBD1FD68F2A007810FD /* GIFView.h */,
 				3E29DCBE1FD68F2A007810FD /* GIFView.m */,
 				3E29DCC11FD68FBE007810FD /* IMG_1035.gif */,
@@ -140,6 +163,14 @@
 			path = GIFViewUITests;
 			sourceTree = "<group>";
 		};
+		ED4565CCE7227B257AB2AB61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73D6946018B6DD68F29112F1 /* libPods-GIFView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E29DCAE1FD68C98007810FD /* Build configuration list for PBXNativeTarget "GIFView" */;
 			buildPhases = (
+				10575F31CFED0279EB699DD1 /* [CP] Check Pods Manifest.lock */,
 				3E29DC7E1FD68C98007810FD /* Sources */,
 				3E29DC7F1FD68C98007810FD /* Frameworks */,
 				3E29DC801FD68C98007810FD /* Resources */,
+				496476D6FADA8FFF6981827A /* [CP] Embed Pods Frameworks */,
+				687921F5EBA2D133F7946E88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,11 +303,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10575F31CFED0279EB699DD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIFView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		496476D6FADA8FFF6981827A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GIFView/Pods-GIFView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		687921F5EBA2D133F7946E88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GIFView/Pods-GIFView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E29DC7E1FD68C98007810FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0FC51D1FD79C9400913E1E /* DiscoverViewController.m in Sources */,
 				3E29DC951FD68C98007810FD /* main.m in Sources */,
 				3E29DCBF1FD68F2A007810FD /* GIFView.m in Sources */,
 				3E29DCB91FD68CC7007810FD /* MainViewController.m in Sources */,
@@ -430,11 +516,13 @@
 		};
 		3E29DCAF1FD68C98007810FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB61E8A496406CE19B3AD0A9 /* Pods-GIFView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X25NZXZ393;
+				GCC_PREFIX_HEADER = GIFView/PrefixHeader.pch;
 				INFOPLIST_FILE = GIFView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -446,11 +534,13 @@
 		};
 		3E29DCB01FD68C98007810FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBC1FA119D454A63CEC9FD4A /* Pods-GIFView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X25NZXZ393;
+				GCC_PREFIX_HEADER = GIFView/PrefixHeader.pch;
 				INFOPLIST_FILE = GIFView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

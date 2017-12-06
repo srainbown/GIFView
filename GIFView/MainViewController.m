@@ -6,9 +6,6 @@
 //  Copyright © 2017年 dangbei. All rights reserved.
 //
 
-#define KWidth self.view.bounds.size.width
-#define KHeight self.view.bounds.size.height
-
 #import "MainViewController.h"
 #import "GIFView.h"
 

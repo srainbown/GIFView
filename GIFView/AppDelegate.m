@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "DiscoverViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,10 +22,25 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
+    
     MainViewController *mainVC = [[MainViewController alloc]init];
+    UINavigationController *mainNav = [[UINavigationController alloc]initWithRootViewController:mainVC];
     mainVC.navigationItem.title = @"主页";
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:mainVC];
-    self.window.rootViewController = navi;
+    mainVC.tabBarItem.title = @"本地GIF";
+    mainVC.tabBarItem.image = [[UIImage imageNamed:@"rain"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    mainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"day"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    DiscoverViewController *disVC = [[DiscoverViewController alloc]init];
+    UINavigationController *disNav = [[UINavigationController alloc]initWithRootViewController:disVC];
+    disVC.navigationItem.title = @"发现";
+    disVC.tabBarItem.title = @"网络GIF";
+    disVC.tabBarItem.image = [[UIImage imageNamed:@"snow"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    disVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"night"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UITabBarController *tab = [[UITabBarController alloc]init];
+    tab.viewControllers = @[mainNav,disNav];
+    tab.selectedIndex = 1;
+    self.window.rootViewController = tab;
     
     return YES;
 }

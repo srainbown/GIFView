@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  GIFView
+//
+//  Created by 紫川秀 on 2017/12/6.
+//  Copyright © 2017年 dangbei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define KWidth self.view.bounds.size.width
+#define KHeight self.view.bounds.size.height
+
+// 定义这个常量，就可以不用在开发过程中使用"mas_"前缀。
+#define MAS_SHORTHAND
+// 定义这个常量，就可以让Masonry帮我们自动把基础数据类型的数据，自动装箱为对象类型。
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+
+#define ZCXWeakSelf __weak __typeof(self) weakSelf = self
+
+#endif /* PrefixHeader_pch */
