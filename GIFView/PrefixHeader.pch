@@ -11,6 +11,8 @@
 
 #define KWidth self.view.bounds.size.width
 #define KHeight self.view.bounds.size.height
+#define KNaviHeight 64
+
 
 // 定义这个常量，就可以不用在开发过程中使用"mas_"前缀。
 #define MAS_SHORTHAND

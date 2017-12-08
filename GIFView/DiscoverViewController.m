@@ -25,25 +25,20 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self createImageView];
-    
-}
-
--(void)createImageView{
+//    NSString *urlStr = @"http://upload-images.jianshu.io/upload_images/1603768-4d821957f044a28c.gif?imageMogr2/auto-orient/strip";
+//    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlStr]];
     
     _gif_one = [[UIImageView alloc]init];
     [self.view addSubview:_gif_one];
     [_gif_one mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.mas_equalTo(self.view).offset(0);
+        make.top.mas_equalTo(self.view.top).offset(KNaviHeight);
+        make.left.right.mas_equalTo(self.view).offset(0);
         make.height.mas_equalTo(@100);
     }];
     _gif_one.backgroundColor = [UIColor redColor];
-//    [_gif_one sd_setImageWithURL: @""];
+//    _gif_one.image = [self getGitImageWithData:data];
     
 }
-
-
 
 
 
