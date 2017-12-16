@@ -24,7 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         backgroundColor = [UIColor whiteColor];
 //    NSString *urlStr = @"http://upload-images.jianshu.io/upload_images/1603768-4d821957f044a28c.gif?imageMogr2/auto-orient/strip";
 //    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlStr]];
     
